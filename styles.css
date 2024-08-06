@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  
+  .cup {
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    border: 5px solid #ccc;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .noodle {
+    width: 10px;
+    height: 60px; /* Adjust noodle height as needed */
+    background-color: #f9a825;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    animation: dance 1s infinite alternate;
+  }
+  
+  @keyframes dance {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
